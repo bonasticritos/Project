@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="header">QR CODE GENERATOR</h1>
+        <p class="loadingmessage" hidden="true" >loading please wait...</p>
+        <img scr ="img" class="qr-code-image" type="img" alt="qrcode" />
+        <div >
+            <label for="dataInput" class="input-lable">
+                Data For QR Code:
+            </label>
+            <input type="text"  id="dataInput" placeholder="Enter data for QR Code" class="input-box-for-qrdata" />
+            <label for="SizeInput" class="input-lable">
+                Size For QR Code(e.g., 300px):
+            </label>
+            <input type="number"  id="sizeInput" placeholder="Enter size for QR Code" class="input-box-for-qrsize" value="150" />
+            <button class="generate-button" >Generate QR Code</button>
+            <button  class="download-button" >Download QR Code</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
